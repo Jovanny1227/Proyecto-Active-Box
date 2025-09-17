@@ -1,0 +1,870 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+p::selection {
+    background-color: #313454;
+    color: white;
+}
+
+/*Primera parte*/
+
+.container1 {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 2fr auto;
+    justify-content: center;
+    column-gap: 16rem;
+    height: 13vh;
+    align-items: center;
+}
+
+.hiperviculos {
+    display: flex;
+    gap: 20px;
+}
+
+.hiperviculos a {
+    text-decoration: none;
+    color: white;
+}
+
+.lineaBlanca {
+    height: 3px;
+    background-color: #51536c;
+    width: auto;
+    grid-column: 1 / 3;
+}
+
+.principal {
+    height: 82vh;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    background: linear-gradient(rgba(47, 48, 76, 0.8), rgba(47, 48, 76, 0.8)), url(img/Layer_34.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.tituloCentro {
+    height: 49vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    place-items: center;
+    place-content: center;
+    gap: 1rem;
+    color: white;
+}
+
+.tituloCentro h1 {
+    font-size: 4rem;
+    font-family: "Raleway";
+}
+
+.tituloCentro p {
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.naranja {
+    background-color: #e84546;
+    color: white;
+    height: 3rem;
+    width: 11rem;
+    margin-top: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+/*Segunda parte*/
+
+.container2 {
+    display: grid;
+    grid-template-columns: 2fr repeat(3, 2fr) 2fr;
+    grid-template-rows: repeat(2, 4fr);
+    justify-content: center;
+    height: 61vh;
+    row-gap: 3rem;
+    padding: 4rem 0;
+}
+
+.container2 div {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+.container2 p {
+    width: 20rem;
+}
+
+.layer1 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.layer2 {
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+.layer3 {
+    grid-column: 4/5;
+    grid-row: 2/3;
+}
+
+.layer4 {
+    grid-column: 2/3;
+}
+
+/*Tercera parte*/
+
+.container3 {
+    display: grid;
+    grid-template-columns: repeat(4, 4fr);
+    grid-template-rows: repeat(2, 3fr);
+    grid-template-areas: "imagen1 imagen2 imagen3 imagen4" "imagen5 imagen6 imagen7 imagen8";
+    height: 66vh;
+    gap: 3px;
+}
+
+.imagen1 {
+    grid-area: imagen1;
+    background-image: url(img/imagen1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s;
+    flex-direction: column;
+}
+
+.imagen2 {
+    grid-area: imagen2;
+    background-image: url(img/imagen2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s;
+    flex-direction: column;
+}
+
+.imagen3 {
+    grid-area: imagen3;
+    background-image: url(img/imagen3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s;
+    flex-direction: column;
+}
+
+.imagen4 {
+    grid-area: imagen4;
+    background-image: url(img/imagen4.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s;
+    flex-direction: column;
+}
+
+.imagen5 {
+    grid-area: imagen5;
+    background-image: url(img/imagen5.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s;
+    flex-direction: column;
+}
+
+.imagen6 {
+    grid-area: imagen6;
+    background-image: url(img/imagen6.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s;
+    flex-direction: column;
+}
+
+.imagen7 {
+    grid-area: imagen7;
+    background-image: url(img/imagen7.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s;
+    flex-direction: column;
+}
+
+.imagen8 {
+    grid-area: imagen8;
+    background-image: url(img/imagen8.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s;
+    flex-direction: column;
+}
+
+.imagen1 p {
+    color: transparent;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.imagen1:hover {
+    background-blend-mode: multiply;
+    background-color: rgba(255, 0, 0, 0.6);
+}
+
+.imagen1:hover .textoFotos {
+    color: white;
+}
+
+.imagen2 p {
+    color: transparent;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.imagen2:hover {
+    background-blend-mode: multiply;
+    background-color: green;
+}
+
+.imagen2:hover .textoFotos {
+    color: white;
+}
+
+.imagen3 p {
+    color: transparent;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.imagen3:hover {
+    background-blend-mode: multiply;
+    background-color: yellow;
+}
+
+.imagen3:hover .textoFotos {
+    color: white;
+}
+
+
+.imagen4 p {
+    color: transparent;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.imagen4:hover {
+    background-blend-mode: multiply;
+    background-color: cyan;
+}
+
+.imagen4:hover .textoFotos {
+    color: white;
+}
+
+
+.imagen5 p {
+    color: transparent;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.imagen5:hover {
+    background-blend-mode: multiply;
+    background-color: gray;
+}
+
+.imagen5:hover .textoFotos {
+    color: white;
+}
+
+
+.imagen6 p {
+    color: transparent;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.imagen6:hover {
+    background-blend-mode: multiply;
+    background-color: blue;
+}
+
+.imagen6:hover .textoFotos {
+    color: white;
+}
+
+
+.imagen7 p {
+    color: transparent;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.imagen7:hover {
+    background-blend-mode: multiply;
+    background-color: greenyellow;
+}
+
+.imagen7:hover .textoFotos {
+    color: white;
+}
+
+
+.imagen8 p {
+    color: transparent;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.imagen8:hover {
+    background-blend-mode: multiply;
+    background-color: wheat;
+}
+
+.imagen8:hover .textoFotos {
+    color: white;
+}
+
+
+/*Cuarta parte*/
+
+.container4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    gap: 23px;
+}
+
+.fotos {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.logosPerfil {
+    display: flex;
+    gap: 12px;
+}
+
+.logosPerfil img {
+    height: 2vh;
+    width: 1rem;
+    padding: 5px;
+    border: 2px solid #c6c9cc;
+}
+
+.textoPerfil p {
+    font-size: 1rem;
+    color: #696d70;
+}
+
+.tituloPerfil h3 {
+    color: #d94a4a;
+    font-family: "Open Sans";
+}
+
+.tituloPerfil h2 {
+    font-family: "Raleway";
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+.ruth {
+    background-image: url(img/Layer30.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 33vh;
+    width: 32vh;
+}
+
+.Timothy {
+    background-image: url(img/Layer\ 31.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 33vh;
+    width: 32vh;
+}
+
+.Victoria {
+    background-image: url(img/Layer\ 32.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 33vh;
+    width: 32vh;
+}
+
+.Beverly {
+    background-image: url(img/Layer\ 33.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 33vh;
+    width: 32vh;
+}
+
+/*Quinta parte*/
+
+.container5 {
+    display: grid;
+    grid-template-columns: 5fr 5fr;
+    grid-template-areas: "fondo-chica texto-morado";
+    height: 50vh;
+    background-color: #523549;
+    color: white;
+}
+
+.fondoChica {
+    grid-area: fondo-chica;
+    background-image: url(img/Layer\ 19.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.textoMorado {
+    grid-area: texto-morado;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    place-content: center;
+    gap: 30px;
+}
+
+.textoMorado p {
+    font-size: 2rem;
+    font-style: italic;
+    font-family: "Cardo";
+}
+
+.morado {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.circulo {
+    width: 10px;
+    height: 10px;
+    background-color: #786070;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.circulo.resaltado {
+    background-color: #ffffff;
+}
+
+/*Sexta parte*/
+
+.container6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 36vh;
+}
+
+.centrado {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    place-items: center;
+    gap: 15px;
+}
+
+.centrado h2 {
+    font-family: "Raleway";
+    font-size: 2rem;
+    font-weight: 200;
+}
+
+.centrado p {
+    font-family: "Open Sans";
+}
+
+.botonNaranja {
+    background-color: #e84546;
+    color: white;
+    height: 3rem;
+    width: 23rem;
+    margin-top: 30px;
+    border: none;
+    cursor: pointer;
+    font-family: "Raleway";
+}
+
+/*Septima parte*/
+
+.container7 {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #3b3f63;
+    align-items: center;
+    height: 25vh;
+}
+
+.container7 h2 {
+    color: white;
+    font-family: "Raleway";
+    font-size: 1rem;
+}
+
+.container7 p {
+    color: #898cab;
+}
+
+.cajas1 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+}
+
+.cajas2 {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    gap: 1rem;
+}
+
+.imagenesLogos {
+    display: flex;
+    gap: 10px;
+}
+
+.imagenesLogos img {
+    width: 18px;
+    height: 23px;
+    padding: 11px;
+    border: solid 1px white;
+}
+
+.cajas3 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+}
+
+/*Octava parte*/
+
+.final {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    text-align: center;
+    background-color: #313454;
+    font-family: "Raleway";
+    font-size: 0.5rem;
+}
+
+.centradoFinal h2 {
+    color: #707682;
+    font-weight: 200;
+}
+
+.corazon {
+    color: #e6493e;
+}
+
+.textoBlancoFinal {
+    color: white;
+    font-weight: 200;
+}
+
+/*Primer responsive*/
+
+@media (max-width: 1279px) {
+
+    /*Primera parte*/
+    .container1 {
+        column-gap: 3rem;
+    }
+
+    .hiperviculos a {
+        font-size: 0.7rem;
+    }
+
+    .tituloCentro h1 {
+        font-size: 3rem;
+    }
+
+    .tituloCentro p {
+        font-size: 1rem;
+    }
+
+    /*Segunda parte*/
+
+    .container2 {
+        gap: 3rem;
+    }
+
+    .container2 h2 {
+        font-size: 1rem;
+    }
+
+    .container2 p {
+        width: 15rem;
+        font-size: 1rem;
+    }
+
+    /*Tercera parte no necesito resposive*/
+
+    /*Cuarta parte*/
+
+
+    .ruth {
+        width: auto;
+    }
+
+    .Timothy {
+        width: auto;
+    }
+
+    .Victoria {
+        width: auto;
+    }
+
+    .Beverly {
+        width: auto;
+    }
+
+    .tituloPerfil h3 {
+        font-size: 1rem;
+    }
+
+    .textoPerfil p {
+        font-size: 0.7rem;
+    }
+
+    /*Sexta parte*/
+
+    .textoMorado p {
+        font-size: 1.6rem;
+    }
+
+    .textoMorado h4 {
+        font-size: 0.7rem;
+    }
+
+    /*El resto no necesito responsive*/
+
+}
+
+/*Segundo responsive*/
+
+@media (max-width: 920px) {
+
+    /*Primera parte no necesito resposive*/
+
+    /*Segunda parte*/
+
+    .container2 p {
+        width: 12rem;
+        font-size: 0.8rem;
+    }
+
+    /*Segunda parte no necesito resposive*/
+
+    /*Tercera parte*/
+
+    .tituloPerfil h2 {
+        font-size: 1rem;
+    }
+
+    .tituloPerfil h3 {
+        font-size: 0.8rem;
+    }
+
+    .textoPerfil p {
+        font-size: 0.6rem;
+    }
+
+    /*Cuarta parte*/
+
+    .textoMorado p {
+        font-size: 1.4rem;
+    }
+
+    .textoMorado h4 {
+        font-size: 0.6rem;
+    }
+
+    .circulo {
+        width: 8px;
+        height: 8px;
+    }
+
+    /* Quinta parte */
+
+    .centrado h2 {
+        font-size: 1.5rem;
+    }
+
+    .centrado b {
+        font-size: 0.9rem;
+    }
+
+    .botonNaranja {
+        width: 22rem;
+    }
+
+    /*Sexta parte*/
+
+    .container7 p {
+        color: #898cab;
+        font-size: 0.6rem;
+    }
+
+    .imagenesLogos img {
+        width: 15px;
+        height: 14px;
+        padding: 6px;
+    }
+
+    /*El footer no necesita responsive*/
+
+}
+
+@media (max-width: 768px) {
+    .logo img {
+        height: 1.8rem;
+        width: 8.3rem;
+    }
+
+    .hiperviculos {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .hiperviculos a {
+        font-size: 0.6rem;
+    }
+
+    .tituloCentro h1 {
+        font-size: 1.8rem;
+    }
+
+    .tituloCentro p {
+        font-size: 1rem;
+        width: 20rem;
+    }
+
+    .naranja {
+        height: 2.4rem;
+        width: 10rem;
+        font-size: 0.7rem;
+    }
+
+    .container2 {
+        gap: 0.5rem;
+    }
+
+    .container2 p {
+        width: 9rem;
+        font-size: 0.7rem;
+    }
+
+    .container2 h2 {
+        font-size: 0.8rem;
+    }
+
+    .imagen1 p {
+        font-size: 0.8rem;
+    }
+
+    .imagen2 p {
+        font-size: 0.8rem;
+    }
+
+    .imagen3 p {
+        font-size: 0.8rem;
+    }
+
+    .imagen4 p {
+        font-size: 0.8rem;
+    }
+
+    .imagen5 p {
+        font-size: 0.8rem;
+    }
+
+    .imagen6 p {
+        font-size: 0.8rem;
+    }
+
+    .imagen7 p {
+        font-size: 0.8rem;
+    }
+
+    .imagen8 p {
+        font-size: 0.8rem;
+    }
+
+    .container4 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 120vh;
+        gap: 7px;
+        padding: 0px 5px;
+    }
+
+    .textoPerfil p {
+        font-size: 0.8rem;
+    }
+
+    
+}
